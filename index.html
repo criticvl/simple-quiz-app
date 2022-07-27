@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Simple Quiz App</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="root">
+        <div class="div-start">
+          <div class="div-start-left">
+            <img class="front-image" src="./imgs/main_img.jpg" />
+          </div>
+          <div class="div-start-right">
+            <div class="div-header">
+              <h1>This is a</h1>
+              <span class="coin">Simple Quiz App</span>
+              <div
+                class="coin_img"
+                style="margin: auto; width: 10vw; margin-top: 2vw"
+              ></div>
+            </div>
+            <div class="div-start-btn">
+              <button class="btn-start">START</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="div-game">
+          <div class="div-game-left">
+            <div class="div-game-left-top">
+              <div class="div-game-left-top-score">
+                You Have:
+                <span class="span-score">0</span>
+              </div>
+              <div class="coin_img"></div>
+              <div class="div-game-left-top-timer">
+                <span id="stopwatch">00:00</span>
+              </div>
+            </div>
+            <div class="div-game-left-bottom">
+              <img class="question-image" />
+            </div>
+          </div>
+          <div class="div-game-right">
+            <div class="div-game-right-top">
+              <div class="div-game-right-top-score">
+                Can Get:
+                <span class="span-score-current">0</span>
+              </div>
+              <div class="coin_img"></div>
+              <div class="div-game-right-top-question">
+                Question:
+                <span class="span-question">0/0</span>
+              </div>
+            </div>
+            <div class="div-game-right-bottom">
+              <div class="div-game-right-bottom-question">
+                <div class="question-div"></div>
+              </div>
+              <div class="div-game-right-bottom-answer">
+                <div class="answer-div"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div-finish">
+          <div class="div-finish-left">
+            <img class="front-image" src="./imgs/main_img.jpg" />
+          </div>
+          <div class="div-finish-right">
+            <div class="coin_img" style="margin: 0 auto; width: 16vw"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./questions.js"></script>
+    <script src="./stopwatch.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

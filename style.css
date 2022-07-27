@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 0;
+    text-shadow: 0px 1px 6px black;
+    user-select: none;
+}
+
+body {
+    background-color: #656565;
+    margin: 0;
+}
+
+div {
+    color: #fff;
+}
+
+img {
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+}
+
+img:hover {
+    filter: contrast(1.1);
+}
+
+button {
+    outline: none;
+    border: none;
+    border-bottom: #656565 solid 0.4vw;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+    box-shadow: 0 0 0.5vw 0.5vw #252525;
+}
+
+button:hover {
+    border-bottom: #858585 solid 0.4vw;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.root {
+    border-radius: 0.5vw;
+    background-color: #353535;
+    aspect-ratio: 16/9;
+    width: 80vw;
+    box-shadow: 0 0 0.5vw 0.5vw #252525;
+}
+
+.div-start {
+    display: flex;
+    padding: 2vw;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.div-start-right {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.div-start-left {
+    width: 50%;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.div-start-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-start {
+    background-color: #7858A6;
+    border-radius: 0.6vw;
+    padding: 1.4vw 4vw;
+    font-size: 2vw;
+    cursor: pointer;
+    color: whitesmoke;
+    user-select: none;
+    margin-bottom: 2vw;
+}
+
+.btn-start:hover {
+    background-color: #a27ed4;
+}
+
+.div-header {
+    user-select: none;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.coin {
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.front-image {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.question-image {
+    width: min-content;
+    aspect-ratio: 1 / 1;
+    height: 96%;
+    box-shadow: 0 0 0.5vw 0.5vw #252525;
+}
+
+.div-game {
+    display: none;
+    justify-content: space-between;
+    padding: 2vw;
+    height: 100%;
+
+}
+
+.div-game-left {
+    width: 50%;
+    height: 100%;
+}
+
+.div-game-right {
+    width: 50%;
+    height: 100%;
+}
+
+.div-game-left-top {
+    height: 10%;
+    font-size: 2vw;
+    display: flex;
+    padding: 0 1.2vw;
+}
+
+.div-game-left-bottom {
+    height: 90%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-game-right-top {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding: 0 1.2vw;
+}
+
+.div-game-right-top-question {
+    width: min-content;
+    white-space: nowrap;
+    margin-left: auto;
+    height: 100%;
+    font-size: 2vw;
+    text-align: right;
+}
+
+.div-game-left-top-score {
+    width: min-content;
+    white-space: nowrap;
+    text-align: left;
+    padding-right: 1vw;
+}
+
+.div-game-left-top-timer {
+    width: min-content;
+    text-align: right;
+    white-space: nowrap;
+    margin-left: auto;
+    color: gainsboro;
+}
+
+.div-game-right-top-score {
+    width: min-content;
+    white-space: nowrap;
+    height: 100%;
+    font-size: 2vw;
+    text-align: left;
+    padding-right: 1vw;
+}
+
+.span-score {
+    color: green;
+}
+
+.span-score-current {
+    color: gold;
+}
+
+.span-question {
+    color: gainsboro;
+}
+
+.question {
+    font-size: 2.4vw;
+    text-align: center;
+    margin-bottom: 2vw;
+    padding: 0.4vw;
+}
+
+.div-game-right-bottom {
+    height: 90%;
+    padding-left: 1vw;
+}
+
+.div-game-right-bottom-question {
+    height: 50%;
+}
+
+.div-game-right-bottom-answer {
+    height: 50%;
+}
+
+.btn-answer {
+    width: 48%;
+    padding: 1.5vw 1vw;
+    border-radius: 0.4vw;
+    color: whitesmoke;
+    background-color: #7858A6;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border-bottom: #656565 solid 0.4vw;
+    margin-top: 1.5vw;
+}
+
+.btn-answer:hover {
+    background-color: #a27ed4;
+}
+
+.btn-restart {
+    padding: 1.5vw;
+    border-radius: 0.4vw;
+    color: whitesmoke;
+    background-color: indianred;
+    font-size: 1.5vw;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 2vw;
+}
+
+.btn-restart:hover {
+    background: #df7878;
+
+}
+
+.answer-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.final-score {
+    color: green;
+}
+
+.question-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin_img {
+    width: 7%;
+    aspect-ratio: 1/1;
+    height: min-content;
+    background-image: url('./imgs/coin.png');
+    object-fit: cover;
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5vw 0.5vw #252525;
+}
+
+.div-finish {
+    display: none;
+    padding: 2vw;
+    height: 100%;
+}
+
+.div-finish-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.div-finish-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.final-text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1vw;
+}
